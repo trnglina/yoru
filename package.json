@@ -1,0 +1,53 @@
+{
+  "name": "yoru",
+  "description": "The new trnglina.org Ghost theme.",
+  "version": "0.0.0",
+  "engines": {
+    "ghost": ">=2.0.0",
+    "ghost-api": "v2"
+  },
+  "license": "CC0-1.0",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "author": {
+    "name": "trnglina",
+    "email": "contact@trnglina.org",
+    "url": "https://www.trnglina.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trnglina/yoru"
+  },
+  "keywords": [
+    "ghost-theme"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "eslint": "^5.15.2",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-livereload": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.11.0"
+  },
+  "config": {
+    "posts_per_page": 20,
+    "image_sizes": {
+      "thumbnail-small": {
+        "width": 600
+      },
+      "cover": {
+        "width": 2000
+      }
+    }
+  }
+}

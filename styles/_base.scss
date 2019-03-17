@@ -1,0 +1,118 @@
+*::selection {
+  background: $colour-accent;
+  color: $colour-accent-foreground;
+}
+
+body {
+  margin: 0;
+  background-color: $colour-background;
+  color: $colour-body;
+  font-size: $font-size-body;
+  font-family: $font-stack-body;
+  line-height: $line-height-body;
+  font-variant-numeric: oldstyle-nums;
+  font-variant-alternates: historical-forms;
+  font-variant-ligatures: discretionary-ligatures;
+}
+
+.site-header {
+  overflow-x: auto;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+  ul.nav {
+    list-style: none;
+    white-space: nowrap;
+    padding: $padding-navigation-vertical 0;
+    margin: 0;
+    font-size: 0;
+    font-weight: bold;
+
+    li {
+      display: inline-block;
+      font-size: $font-size-navigation;
+
+      a {
+        padding: $padding-navigation-inner;
+        color: $colour-body;
+        text-decoration: none;
+        transition: $transition-base;
+
+        &:hover,
+        &:focus {
+          color: $colour-accent;
+          transition: $transition-base;
+        }
+      }
+    }
+  }
+}
+
+.site-nav-left,
+.site-nav-right {
+  flex-basis: 40%;
+}
+
+.site-nav-left {
+  padding-left: $padding-navigation-horizontal;
+
+  ul.nav li:first-child {
+    margin-left: -$padding-navigation-inner;
+  }
+}
+
+.site-nav-right {
+  padding-right: $padding-navigation-horizontal;
+  text-align: right;
+
+  ul.nav li:last-child {
+    margin-right: -$padding-navigation-inner;
+  }
+}
+
+.site-nav-centre .site-nav-logo {
+  display: block;
+  height: $height-logo-navigation;
+
+  img {
+    display: block;
+    width: auto;
+    height: inherit;
+  }
+}
+
+@media screen and (max-width: $breakpoint-mid) {
+  .site-nav-centre {
+    display: none;
+  }
+}
+
+.site-footer {
+  padding: $padding-footer;
+  background: darken($colour-background, 2%);
+  font-size: $font-size-footer;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: $colour-accent;
+    transition: $transition-base;
+    border-bottom: 3px $colour-background solid;
+
+    &:hover,
+    &:focus {
+      color: $colour-body;
+      transition: $transition-base;
+      border-color: $colour-accent;
+    }
+  }
+}
+
+.site-main {
+  overflow-x: hidden;
+}

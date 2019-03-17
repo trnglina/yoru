@@ -1,0 +1,16 @@
+.pagination {
+  text-align: center;
+  font-size: 0;
+  margin-bottom: $padding-page-pagination-after;
+
+  .pagination-page-number {
+    font-size: $font-size-pagination;
+  }
+  .pagination-spacer,
+  .pagination-older-posts,
+  .pagination-newer-posts {
+    font-size: $font-size-pagination;
+    display: inline-block;
+    width: $width-pagination-basis;
+  }
+}

@@ -1,0 +1,10 @@
+.page-header {
+  max-width: $width-post-content-max;
+  margin: 0 auto $padding-page-header-after auto;
+  padding: 0 $padding-page-content;
+
+  .page-header-title,
+  .page-header-excerpt {
+    text-align: center;
+  }
+}

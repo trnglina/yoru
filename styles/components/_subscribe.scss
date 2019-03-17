@@ -1,0 +1,85 @@
+.subscribe {
+  max-width: $width-post-content-max;
+  margin: $padding-page-subscribe / 2 auto;
+  padding: $padding-page-subscribe / 2 $padding-page-subscribe;
+
+  .subscribe-title {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin: $padding-post-block / 2 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0;
+      right: 0;
+      bottom: 5px;
+      height: 5px;
+      background: $colour-accent;
+      opacity: 0.8;
+      z-index: -1;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: $padding-post-block / 2 -10px 0 -10px;
+    border: none;
+    background: $colour-background;
+    color: $colour-body;
+    font-size: $font-size-body;
+    font-family: $font-stack-code;
+    border-bottom: 1px solid $colour-background;
+
+    &:focus,
+    &:active {
+      border-color: $colour-body;
+    }
+  }
+
+  button[type="submit"] {
+    position: relative;
+    margin: $padding-post-block / 2 0;
+    padding: 5px 0;
+    background: $colour-background;
+    color: $colour-accent;
+    font-family: $font-stack-body;
+    font-weight: bold;
+    font-size: $font-size-body;
+    border: none;
+    transition: $transition-base;
+    z-index: 1;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0;
+      right: 100%;
+      bottom: 3px;
+      height: 3px;
+      background: $colour-accent;
+      opacity: 0.8;
+      z-index: -1;
+      transition: $transition-base;
+    }
+
+    &:hover,
+    &:focus {
+      color: $colour-body;
+
+      &::after {
+        right: 0;
+        transition: $transition-base;
+      }
+    }
+  }
+}

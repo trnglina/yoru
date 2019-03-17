@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Bell";
+  src: url("BellMTStd-BoldItalic.woff2") format("woff2"),
+    url("BellMTStd-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Bell";
+  src: url("BellMTStd-SemiBoldItalic.woff2") format("woff2"),
+    url("BellMTStd-SemiBoldItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Bell";
+  src: url("BellMTStd-Bold.woff2") format("woff2"),
+    url("BellMTStd-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bell";
+  src: url("BellMTStd-SemiBold.woff2") format("woff2"),
+    url("BellMTStd-SemiBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Colours */
+$colour-background: #fdfdfd;
+$colour-accent: #ff248d;
+$colour-accent-foreground: $colour-background;
+$colour-body: #131313;
+
+/* Font stacks */
+$font-stack-body: "Bell", Georgia, "Times New Roman", Times, "ヒラギノ明朝 ProN",
+  "Hiragino Mincho ProN", "游明朝", "游明朝体", YuMincho, "Yu Mincho",
+  "ＭＳ 明朝", "MS Mincho", HiraMinProN-W3, "TakaoEx明朝", TakaoExMincho,
+  "MotoyaLCedar", "Droid Sans Japanese", serif;
+$font-stack-code: Menlo, "Consolas", "Inconsolata", Courier, monospace;
+
+/* Font sizes */
+$font-size-body: 16pt;
+$font-size-navigation: $font-size-body;
+$font-size-pagination: $font-size-body;
+$font-size-footer: $font-size-body;
+
+/* Other typography */
+$line-height-body: 1.4;
+
+/* Padding sizes */
+$padding-base: 70px;
+
+$padding-page-content: 50px;
+$padding-page-header-after: 80px;
+$padding-page-pagination-after: $padding-page-content;
+$padding-page-subscribe: 2 * $padding-page-content;
+$padding-post-block: 30px;
+$padding-list-inner: 50px;
+
+$padding-post-list: 0 $padding-page-content $padding-page-content
+  $padding-page-content;
+$padding-post-list-inner: $padding-base;
+
+$padding-navigation-vertical: $padding-base - 10px;
+$padding-navigation-horizontal: $padding-page-content;
+$padding-navigation-inner: 20px;
+
+$padding-footer: $padding-base;
+
+/* Border Radiuses */
+$border-radius-base: 10px;
+$border-radius-code: $border-radius-base;
+
+/* Dimensions */
+$height-logo-navigation: 50px;
+$height-post-card: 600px;
+$height-gallery-image: 50vw;
+$width-post-content-max: 850px;
+$width-pagination-basis: 50px;
+
+/* Transitions */
+$transition-base: all 0.2s cubic-bezier(0.86, 0, 0.07, 1);
+
+/* Breakpoints */
+$breakpoint-mid: 1248px;

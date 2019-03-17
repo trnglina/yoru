@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>{{meta_title}}</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="{{asset "screen.css"}}" />
+
+    {{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+    <header class="site-header">
+        <div class="site-nav">
+            <nav class="site-nav-left">
+                {{navigation}}
+            </nav>
+            <div class="site-nav-centre">
+                {{#if @site.logo}}
+                    <a class="site-nav-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
+                {{/if}}
+            </div>
+            <nav class="site-nav-right">
+                <ul class="nav" role="menu">
+                    {{#if @site.facebook}}
+                        <li><a href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank"
+                                rel="noopener">Facebook</a></li>
+                    {{/if}}
+                    {{#if @site.twitter}}
+                        <li><a href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank"
+                                rel="noopener">Twitter</a></li>
+                    {{/if}}
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="swup" class="site-main" role="main">
+        {{{body}}}
+        {{#if pagination.pages}}
+            {{pagination}}
+        {{/if}}
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; {{date format="YYYY"}} <a href="{{@site.url}}">{{@site.title}}</a>.</p>
+        <p>Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>.</p>
+    </footer>
+
+    <script src="{{asset "smartypants.js"}}"></script>
+    <script src="{{asset "swup.js"}}"></script>
+    <script src="{{asset "app.js"}}"></script>
+
+    {{ghost_foot}}
+</body>
+
+</html>

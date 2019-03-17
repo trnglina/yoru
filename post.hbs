@@ -1,0 +1,25 @@
+{{!< default}}
+
+{{#post}}
+    <header class="page-header post-header">
+        <h1 class="page-header-title post-header-title">{{title}}</h1>
+
+        {{#if custom_excerpt}}
+            <p class="page-header-excerpt post-header-excerpt">{{custom_excerpt}}</p>
+        {{/if}}
+
+        {{#if feature_image}}
+            <div class="post-header-image">
+                <img src="{{feature_image}}" alt="{{title}}" />
+            </div>
+        {{/if}}
+    </header>
+
+    <article class="post-content" role="article">
+        {{content}}
+    </article>
+
+    {{#if @labs.subscribers}}
+        {{> "subscribe"}}
+    {{/if}}
+{{/post}}

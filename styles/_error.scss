@@ -1,0 +1,17 @@
+.error-header {
+  padding: 15vh 0 20vh 0;
+
+  .error-header-title {
+    font-size: 80pt;
+    line-height: 0;
+  }
+
+  .error-header-excerpt {
+    margin-bottom: $padding-base;
+  }
+
+  .error-header-link {
+    display: block;
+    text-align: center;
+  }
+}

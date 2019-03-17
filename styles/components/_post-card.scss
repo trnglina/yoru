@@ -1,0 +1,76 @@
+.post-card {
+  display: flex;
+  width: 40%;
+  height: $height-post-card;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  flex-grow: 1;
+
+  &:nth-child(4n + 0),
+  &:nth-child(4n + 1) {
+    width: 60%;
+  }
+
+  &.featured {
+    width: 100%;
+    height: $height-post-card * 2;
+  }
+
+  &.no-featured-image {
+    background-image: url("/assets/Trnglina--NoBanner.png");
+  }
+
+  .post-card-link {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: $padding-post-list-inner;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      display: block;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: linear-gradient(
+        155deg,
+        rgba(0, 0, 0, 0.4) 00%,
+        rgba(0, 0, 0, 0.1) 50%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      transition: $transition-base;
+    }
+
+    &:hover::after {
+      transition: $transition-base;
+      right: -500px;
+      bottom: -500px;
+    }
+  }
+
+  .post-card-content {
+    max-width: $width-post-content-max;
+    color: white;
+  }
+
+  .post-card-title {
+  }
+}
+
+@media screen and (max-width: $breakpoint-mid) {
+  .post-card {
+    width: 100%;
+
+    &:nth-child(4n + 0),
+    &:nth-child(4n + 1) {
+      width: 100%;
+    }
+  }
+}

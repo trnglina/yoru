@@ -1,0 +1,9 @@
+<article class="post-card {{post_class}} {{#unless feature_image}}no-featured-image{{/unless}}" {{#if feature_image}}
+    style="background-image: url({{img_url feature_image size="thumbnail-small"}})" {{/if}}>
+    <a class="post-card-link" href="{{url}}">
+        <div class="post-card-content">
+            <h2 class="post-card-title">{{title}}</h2>
+            <p class="post-card-excerpt">{{excerpt}}</p>
+        </div>
+    </a>
+</article>
