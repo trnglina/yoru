@@ -35,6 +35,7 @@ $colour-background: #fdfdfd;
 $colour-accent: #ff248d;
 $colour-accent-foreground: $colour-background;
 $colour-body: #131313;
+$colour-card-header: $colour-background;
 
 /* Font stacks */
 $font-stack-body: "Bell", Georgia, "Times New Roman", Times, "ヒラギノ明朝 ProN",
@@ -48,7 +49,7 @@ $font-size-body: 16pt;
 $font-size-navigation: 14pt;
 $font-size-pagination: $font-size-body;
 $font-size-footer: $font-size-body;
-$font-size-card-header: 32pt;
+$font-size-card-header: 48pt;
 
 /* Other typography */
 $line-height-body: 1.4;

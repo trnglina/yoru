@@ -1,26 +1,14 @@
 .subscribe {
   max-width: $width-post-content-max;
   margin: $padding-page-subscribe / 2 auto;
-  padding: $padding-page-subscribe / 2 $padding-page-subscribe;
+  padding: $padding-page-subscribe / 2 $padding-page-content;
 
   .subscribe-title {
-    display: inline-block;
+    display: inline;
     position: relative;
     z-index: 1;
     margin: $padding-post-block / 2 0;
-
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      left: 0;
-      right: 0;
-      bottom: 5px;
-      height: 5px;
-      background: $colour-accent;
-      opacity: 0.8;
-      z-index: -1;
-    }
+    border-bottom: 3px $colour-accent solid;
   }
 
   p {
