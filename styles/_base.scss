@@ -13,6 +13,13 @@ body {
   font-variant-numeric: oldstyle-nums;
   font-variant-alternates: historical-forms;
   font-variant-ligatures: discretionary-ligatures;
+  hyphens: auto;
+}
+
+@media screen and (max-width: $breakpoint-small) {
+  body {
+    font-size: 0.75 * $font-size-body;
+  }
 }
 
 .site-header {
@@ -111,6 +118,12 @@ body {
       transition: $transition-base;
       border-color: $colour-accent;
     }
+  }
+}
+
+@media screen and (max-width: $breakpoint-small) {
+  .site-footer {
+    font-size: 0.75 * $font-size-footer;
   }
 }
 

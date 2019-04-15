@@ -71,3 +71,12 @@
     }
   }
 }
+
+@media screen and (max-width: $breakpoint-small) {
+  .subscribe {
+    input[type="email"],
+    button[type="submit"] {
+      font-size: 0.75 * $font-size-body;
+    }
+  }
+}

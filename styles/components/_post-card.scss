@@ -85,3 +85,14 @@
     }
   }
 }
+
+@media screen and (max-width: $breakpoint-small) {
+  .post-card {
+    .post-card-link {
+      padding: 0.5 * $padding-post-list-inner;
+    }
+    .post-card-link .post-card-title {
+      font-size: 0.75 * $font-size-card-header;
+    }
+  }
+}

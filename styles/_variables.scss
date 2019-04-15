@@ -57,18 +57,19 @@ $line-height-body: 1.4;
 /* Padding sizes */
 $padding-base: 70px;
 
-$padding-page-content: 50px;
+$padding-page-content: 30px;
 $padding-page-header-after: 80px;
 $padding-page-pagination-after: $padding-page-content;
 $padding-page-subscribe: 2 * $padding-page-content;
 $padding-post-block: 30px;
-$padding-list-inner: 50px;
+$padding-blockquote: 10px;
+$padding-list-inner: 30px;
 
 $padding-post-list: 0 $padding-page-content $padding-page-content
   $padding-page-content;
 $padding-post-list-inner: $padding-base;
 
-$padding-navigation-vertical: $padding-base - 10px;
+$padding-navigation-vertical: $padding-page-content;
 $padding-navigation-horizontal: $padding-page-content;
 $padding-navigation-inner: 20px;
 
@@ -77,6 +78,7 @@ $padding-footer: $padding-base;
 /* Border Radiuses */
 $border-radius-base: 10px;
 $border-radius-code: $border-radius-base;
+$border-thickness-blockquote: 2px;
 
 /* Dimensions */
 $height-logo-navigation: 50px;
@@ -89,4 +91,5 @@ $width-pagination-basis: 50px;
 $transition-base: all 0.2s cubic-bezier(0.86, 0, 0.07, 1);
 
 /* Breakpoints */
+$breakpoint-small: 480px;
 $breakpoint-mid: 1248px;

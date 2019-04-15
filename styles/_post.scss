@@ -60,6 +60,13 @@
     }
   }
 
+  blockquote {
+    font-style: italic;
+    padding-left: $padding-blockquote;
+    border-left: $border-thickness-blockquote solid $colour-accent;
+    max-width: 0.7 * $width-post-content-max;
+  }
+
   > ul,
   > ol {
     max-width: 0.7 * $width-post-content-max;
@@ -107,6 +114,10 @@
     h5,
     h6 {
       left: 0;
+    }
+
+    blockquote {
+      margin-left: -$padding-blockquote - $border-thickness-blockquote;
     }
   }
 
