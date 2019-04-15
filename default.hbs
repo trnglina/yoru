@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{lang}}">
+<html lang="{{@site.lang}}">
 
 <head>
     <meta charset="utf-8" />
@@ -22,18 +22,18 @@
             </nav>
             <div class="site-nav-centre">
                 {{#if @site.logo}}
-                    <a class="site-nav-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
+                <a class="site-nav-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
                 {{/if}}
             </div>
             <nav class="site-nav-right">
                 <ul class="nav" role="menu">
                     {{#if @site.facebook}}
-                        <li><a href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank"
-                                rel="noopener">Facebook</a></li>
+                    <li><a href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank"
+                            rel="noopener">Facebook</a></li>
                     {{/if}}
                     {{#if @site.twitter}}
-                        <li><a href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank"
-                                rel="noopener">Twitter</a></li>
+                    <li><a href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank"
+                            rel="noopener">Twitter</a></li>
                     {{/if}}
                 </ul>
             </nav>
@@ -43,7 +43,7 @@
     <main id="swup" class="site-main" role="main">
         {{{body}}}
         {{#if pagination.pages}}
-            {{pagination}}
+        {{pagination}}
         {{/if}}
     </main>
 
@@ -52,7 +52,7 @@
         <p>Published with <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>.</p>
     </footer>
 
-    <script src="{{asset "smartypants.js"}}"></script>
+    <script src="{{asset "smartquotes.js"}}"></script>
     <script src="{{asset "swup.js"}}"></script>
     <script src="{{asset "app.js"}}"></script>
 
