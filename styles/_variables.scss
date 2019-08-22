@@ -4,6 +4,7 @@ $colour-accent: #fe5f55;
 $colour-accent-foreground: $colour-background;
 $colour-body: #112636;
 $colour-card-header: $colour-background;
+$colour-card-header-shadow: $colour-accent;
 
 /* Font stacks */
 $font-stack-body: "Georgia Pro", Georgia, "Times New Roman", Times, "ヒラギノ明朝 ProN",
@@ -17,10 +18,11 @@ $font-size-body: 16pt;
 $font-size-navigation: 14pt;
 $font-size-pagination: $font-size-body;
 $font-size-footer: $font-size-body;
-$font-size-card-header: 36pt;
+$font-size-card-header: 42pt;
 
 /* Other typography */
 $line-height-body: 1.6;
+$line-height-card-header: 1.4;
 
 /* Padding sizes */
 $padding-base: 70px;
