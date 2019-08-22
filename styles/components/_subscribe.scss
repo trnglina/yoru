@@ -1,7 +1,10 @@
 .subscribe {
   max-width: $width-post-content-max;
-  margin: $padding-page-subscribe / 2 auto;
+  margin: ($padding-page-subscribe / 2) + $padding-post-block auto;
   padding: $padding-page-subscribe / 2 $padding-page-content;
+  background: $colour-accent;
+  color: $colour-background;
+  text-shadow: $colour-body 2px 2px;
 
   .subscribe-title {
     display: inline;
@@ -18,10 +21,11 @@
   input[type="email"] {
     width: 100%;
     padding: 10px;
-    margin: $padding-post-block / 2 -10px 0 -10px;
+    margin: $padding-post-block / 2 0;
+    padding: $padding-subscribe-inner 0;
     border: none;
-    background: $colour-background;
-    color: $colour-body;
+    background: $colour-accent;
+    color: $colour-background;
     font-size: $font-size-body;
     font-family: $font-stack-code;
     border-bottom: 1px solid $colour-background;
@@ -36,8 +40,9 @@
     position: relative;
     margin: $padding-post-block / 2 0;
     padding: 5px 0;
-    background: $colour-background;
-    color: $colour-accent;
+    background: $colour-accent;
+    color: $colour-background;
+    text-shadow: $colour-body 2px 2px;
     font-family: $font-stack-body;
     font-weight: bold;
     font-size: $font-size-body;
@@ -63,6 +68,7 @@
     &:hover,
     &:focus {
       color: $colour-body;
+      text-shadow: none;
 
       &::after {
         right: 0;

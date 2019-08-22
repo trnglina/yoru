@@ -27,10 +27,26 @@ body {
 }
 
 .site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: $colour-background;
+    z-index: -999;
+  }
 
   ul.nav {
     list-style: none;
@@ -102,7 +118,7 @@ body {
 
 .site-footer {
   padding: $padding-footer;
-  background: darken($colour-background, 2%);
+  background: darken($colour-background, 5%);
   font-size: $font-size-footer;
   text-align: center;
 
@@ -129,4 +145,5 @@ body {
 
 .site-main {
   overflow-x: hidden;
+  margin: 100px 0 0 0;
 }

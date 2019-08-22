@@ -40,7 +40,7 @@
         </div>
     </header>
 
-    <main id="swup" class="site-main" role="main">
+    <main class="site-main" role="main">
         {{{body}}}
         {{#if pagination.pages}}
         {{pagination}}
@@ -53,8 +53,7 @@
     </footer>
 
     <script src="{{asset "smartquotes.js"}}"></script>
-    <script src="{{asset "swup.js"}}"></script>
-    <script src="{{asset "app.js"}}"></script>
+    <script>smartquotes()</script>
 
     {{ghost_foot}}
 </body>

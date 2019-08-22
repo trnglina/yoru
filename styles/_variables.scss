@@ -1,58 +1,26 @@
-@font-face {
-  font-family: "Bell";
-  src: url("BellMTStd-BoldItalic.woff2") format("woff2"),
-    url("BellMTStd-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Bell";
-  src: url("BellMTStd-SemiBoldItalic.woff2") format("woff2"),
-    url("BellMTStd-SemiBoldItalic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Bell";
-  src: url("BellMTStd-Bold.woff2") format("woff2"),
-    url("BellMTStd-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Bell";
-  src: url("BellMTStd-SemiBold.woff2") format("woff2"),
-    url("BellMTStd-SemiBold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* Colours */
-$colour-background: #fdfdfd;
-$colour-accent: #ff248d;
+$colour-background: #f2f2f2;
+$colour-accent: #fe5f55;
 $colour-accent-foreground: $colour-background;
-$colour-body: #131313;
+$colour-body: #112636;
 $colour-card-header: $colour-background;
 
 /* Font stacks */
-$font-stack-body: "Bell", Georgia, "Times New Roman", Times, "ヒラギノ明朝 ProN",
+$font-stack-body: "Georgia Pro", Georgia, "Times New Roman", Times, "ヒラギノ明朝 ProN",
   "Hiragino Mincho ProN", "游明朝", "游明朝体", YuMincho, "Yu Mincho",
   "ＭＳ 明朝", "MS Mincho", HiraMinProN-W3, "TakaoEx明朝", TakaoExMincho,
   "MotoyaLCedar", "Droid Sans Japanese", serif;
 $font-stack-code: Menlo, "Consolas", "Inconsolata", Courier, monospace;
 
 /* Font sizes */
-$font-size-body: 18pt;
+$font-size-body: 16pt;
 $font-size-navigation: 14pt;
 $font-size-pagination: $font-size-body;
 $font-size-footer: $font-size-body;
-$font-size-card-header: 42pt;
+$font-size-card-header: 36pt;
 
 /* Other typography */
-$line-height-body: 1.4;
+$line-height-body: 1.6;
 
 /* Padding sizes */
 $padding-base: 70px;
@@ -64,16 +32,17 @@ $padding-page-subscribe: 2 * $padding-page-content;
 $padding-post-block: 30px;
 $padding-blockquote: 10px;
 $padding-list-inner: 30px;
+$padding-subscribe-inner: 10px;
 
 $padding-post-list: 0 $padding-page-content $padding-page-content
   $padding-page-content;
 $padding-post-list-inner: $padding-base;
 
-$padding-navigation-vertical: $padding-page-content;
+$padding-navigation-vertical: 20px;
 $padding-navigation-horizontal: $padding-page-content;
 $padding-navigation-inner: 20px;
 
-$padding-footer: $padding-base;
+$padding-footer: $padding-base / 2 $padding-base;
 
 /* Border Radiuses */
 $border-radius-base: 10px;

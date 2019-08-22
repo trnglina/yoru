@@ -4,6 +4,7 @@
     position: relative;
     width: 100vw;
     left: calc((100vw - #{$width-post-content-max}) / -2);
+    z-index: 3;
   }
 }
 
@@ -64,12 +65,10 @@
     font-style: italic;
     padding-left: $padding-blockquote;
     border-left: $border-thickness-blockquote solid $colour-accent;
-    max-width: 0.7 * $width-post-content-max;
   }
 
   > ul,
   > ol {
-    max-width: 0.7 * $width-post-content-max;
     padding-left: $padding-list-inner;
   }
 
@@ -80,19 +79,15 @@
   h5,
   h6 {
     margin: $padding-post-block * 2 0;
-    position: relative;
-    left: -$padding-page-content;
     background: $colour-background;
   }
 }
 
 .kg-card {
   display: inline-block;
-  position: relative;
   margin-right: 0;
   margin-left: 0;
-  left: -$padding-page-content;
-  width: $width-post-content-max + $padding-page-content;
+  width: $width-post-content-max;
 
   figcaption {
     font-style: italic;
@@ -102,28 +97,6 @@
 .kg-image-card {
   .kg-image {
     width: inherit;
-  }
-}
-
-@media screen and (max-width: ($width-post-content-max + (6 * $padding-page-content))) {
-  .post-content {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      left: 0;
-    }
-
-    blockquote {
-      margin-left: -$padding-blockquote - $border-thickness-blockquote;
-    }
-  }
-
-  .kg-card {
-    left: 0;
-    width: 100%;
   }
 }
 
