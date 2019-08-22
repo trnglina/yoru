@@ -59,6 +59,8 @@
       text-shadow: 1px 1px 0px $colour-card-header-shadow;
       margin-bottom: 0;
       transition: $transition-base;
+      word-break: break-word;
+      hyphens: auto;
     }
 
     &:hover {
@@ -69,7 +71,7 @@
       }
 
       .post-card-title {
-        text-shadow: 3px 3px 0px $colour-card-header-shadow;
+        text-shadow: 2px 2px 0px $colour-card-header-shadow;
         transition: $transition-base;
       }
     }
@@ -93,7 +95,7 @@
       padding: 0.5 * $padding-post-list-inner;
     }
     .post-card-link .post-card-title {
-      font-size: 0.75 * $font-size-card-header;
+      font-size: 0.65 * $font-size-card-header;
     }
   }
 }

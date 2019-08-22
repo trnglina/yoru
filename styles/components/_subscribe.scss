@@ -1,6 +1,6 @@
 .subscribe {
   max-width: $width-post-content-max;
-  margin: ($padding-page-subscribe / 2) + $padding-post-block auto;
+  margin: ($padding-page-subscribe / 2) + $padding-post-block auto 0 auto;
   padding: $padding-page-subscribe / 2 $padding-page-content;
   background: $colour-accent;
   color: $colour-background;

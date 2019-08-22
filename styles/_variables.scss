@@ -22,7 +22,7 @@ $font-size-card-header: 42pt;
 
 /* Other typography */
 $line-height-body: 1.6;
-$line-height-card-header: 1.4;
+$line-height-card-header: 1.2;
 
 /* Padding sizes */
 $padding-base: 70px;
@@ -40,7 +40,7 @@ $padding-post-list: 0 $padding-page-content $padding-page-content
   $padding-page-content;
 $padding-post-list-inner: $padding-base;
 
-$padding-navigation-vertical: $padding-page-content;
+$padding-navigation-vertical: 20px;
 $padding-navigation-horizontal: $padding-page-content;
 $padding-navigation-inner: 20px;
 
@@ -50,9 +50,10 @@ $padding-footer: $padding-base / 2 $padding-base;
 $border-radius-base: 10px;
 $border-radius-code: $border-radius-base;
 $border-thickness-blockquote: 2px;
+$border-thickness-nav: 2px;
 
 /* Dimensions */
-$height-logo-navigation: 50px;
+$height-logo-navigation: 40px;
 $height-post-card: 600px;
 $height-gallery-image: 50vw;
 $width-post-content-max: 750px;

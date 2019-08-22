@@ -29,20 +29,6 @@
     margin: $padding-post-block 0;
   }
 
-  a {
-    text-decoration: none;
-    color: $colour-accent;
-    transition: $transition-base;
-    border-bottom: 3px transparent solid;
-
-    &:hover,
-    &:focus {
-      color: $colour-body;
-      transition: $transition-base;
-      border-color: $colour-accent;
-    }
-  }
-
   hr {
     display: block;
     max-width: 100px;
@@ -84,19 +70,18 @@
 }
 
 .kg-card {
-  display: inline-block;
-  margin-right: 0;
-  margin-left: 0;
-  width: $width-post-content-max;
+  display: block;
 
   figcaption {
     font-style: italic;
+    text-align: center;
   }
 }
 
 .kg-image-card {
   .kg-image {
-    width: inherit;
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -106,20 +91,12 @@
   left: calc(
     (100vw - #{$width-post-content-max + 2 * $padding-page-content}) / -2
   );
-
-  figcaption {
-    text-align: center;
-  }
 }
 
 .kg-width-full {
   position: relative;
   width: 100vw;
   left: calc((100vw - #{$width-post-content-max}) / -2);
-
-  figcaption {
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: $width-post-content-max + (2 * $padding-page-content)) {
