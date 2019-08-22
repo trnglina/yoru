@@ -1,9 +1,8 @@
-const babel = require('gulp-babel')
 const gulp = require('gulp')
 const livereload = require('gulp-livereload')
 const sass = require('gulp-sass')
 const sourcemaps = require('gulp-sourcemaps')
-const uglify = require('gulp-uglify')
+const zip = require('gulp-zip')
 
 sass.compiler = require('node-sass')
 
@@ -17,25 +16,17 @@ gulp.task('sass', () => {
     .pipe(livereload())
 })
 
-gulp.task('js', () => {
-  gulp.src('scripts/**/*.js').pipe(gulp.dest('assets'))
-  return gulp
-    .src('scripts/app.js')
-    .pipe(sourcemaps.init())
-    .pipe(
-      babel({
-        presets: ['@babel/env']
-      })
-    )
-    .pipe(uglify())
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('assets'))
-})
-
 gulp.task('watch', () => {
   livereload.listen()
-  gulp.watch('./scripts/**/*.js', gulp.series('js'))
   gulp.watch('./styles/**/*.scss', gulp.series('sass'))
 })
+
+gulp.task('zip', () => {
+  return gulp.src(['*.hbs', 'package.json', 'LICENSE', 'partials/**', 'assets/**'], { base: '.' })
+    .pipe(zip('yoru.zip'))
+    .pipe(gulp.dest('dist'))
+})
+
+gulp.task('dist', gulp.series('sass', 'zip'))
 
 gulp.task('default', gulp.series('watch'))

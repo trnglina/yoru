@@ -1,14 +1,15 @@
 {
   "name": "yoru",
   "description": "The new https://www.trnglina.org Ghost theme.",
-  "version": "1.4.0",
+  "version": "1.4.4",
   "engines": {
     "ghost": ">=2.0.0",
     "ghost-api": "v2"
   },
   "license": "CC0-1.0",
   "scripts": {
-    "dev": "gulp"
+    "dev": "gulp",
+    "dist": "gulp dist"
   },
   "author": {
     "name": "trnglina",
@@ -32,11 +33,10 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "gulp": "^4.0.0",
-    "gulp-babel": "^8.0.0",
     "gulp-livereload": "^4.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.2",
+    "gulp-zip": "^5.0.0",
     "node-sass": "^4.11.0"
   },
   "config": {
